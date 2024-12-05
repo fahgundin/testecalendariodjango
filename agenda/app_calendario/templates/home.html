@@ -1,0 +1,21 @@
+<center>
+
+<h1>{{cal | safe}}</h1>
+
+<table>
+    <tr>
+        <th>quando</th>
+        <th>o que foi feito?</th>
+    </tr>
+    <br>
+    {% for registro in registros %}
+    <tr>
+        <th>{{registro.data}} </th>
+        <th>{{registro.oqfoifeito}} </th>
+        
+    </tr>^
+    {%endfor%}
+</table>
+
+
+</center>
